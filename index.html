@@ -38,7 +38,57 @@ body {
 	left: 35%;
 	transform: translate(-50%, -50%);
 }
-
+.box{
+  width: 350px;
+  padding: 55px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #e2efff;
+  font-family: sans-serif;
+  text-align: center;
+}
+.box h1{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+.box input[type = "username"],.box input[type = "password"]{
+  border:0;
+  background: transparent;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #5560ff;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: grey;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box input[type = "username"]:focus,.box input[type = "password"]:focus{
+  width: 280px;
+  border-color: #5cefff;
+}
+.box input[type = "submit"]{
+  border:0;
+  background: #3fe0df;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3fe0d0;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.box input[type = "submit"]:hover{
+  background: #5560ff;
+}
 table {
 	width: 150px;
 	border-collapse: collapse;
@@ -152,19 +202,20 @@ input[type=text]:focus, input[type=password]:focus {
 </style>
 </head>
 <body>
+<div class="body">
 
   <div class="bg-img">
-  <form action="/action_page.php" class="container">
-    <h1>Login</h1>
+  <form action="/action_page.php" class="box">
+    <h1><font color="pink">Saet</font> Byul</h1>
 
     <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
+    <input type="username" placeholder="Enter Email" name="email" required>
 
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required><h2>
+    <input type="password" placeholder="Enter Password" name="psw" required>
 
-    <button type="submit" class="btn">Login</button>
-  </h2></form>
+    <input type="submit" class="btn" value="Login">
+ </form>
 </div>
 
 </body>
